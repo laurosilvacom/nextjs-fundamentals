@@ -2,6 +2,11 @@
 
 > Demonstrates the process of setting up a Next.js project using the automatic installation method.
 
+System Requirements:
+
+- Node.js 18.17 or later.
+- macOS, Windows (including WSL), and Linux are supported.
+
 Initialize a fresh Next.js project with `create-next-app@latest`.
 
 ```bash
