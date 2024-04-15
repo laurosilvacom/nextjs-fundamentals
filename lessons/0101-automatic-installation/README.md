@@ -1,4 +1,4 @@
-## Automatic Installation
+# Automatic Installation
 
 > Demonstrates the process of setting up a Next.js project using the automatic installation method.
 

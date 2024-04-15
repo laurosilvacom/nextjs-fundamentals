@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "course-monorepo",
   "private": true,
   "scripts": {
     "build": "turbo build",

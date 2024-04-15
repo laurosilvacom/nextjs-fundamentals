@@ -1,18 +1,24 @@
 #!/bin/bash
 
-# Ask the user for lesson numbers and names
-echo "Enter lesson numbers, separated by spaces:"
-read -a lesson_numbers
+# Function to convert to kebab case
+function to_kebab_case() {
+    echo "$1" | awk '{gsub(/ /,"-"); print tolower($0)}'
+}
 
-echo "Enter lesson names, separated by spaces:"
-read -a lesson_names
+# Ask the user for lesson numbers and names
+echo "Enter lesson numbers, separated by commas:"
+IFS=',' read -ra lesson_numbers
+
+echo "Enter lesson names, separated by commas:"
+IFS=',' read -ra lesson_names
 
 # Get the length of the arrays
 length=${#lesson_numbers[@]}
 
 # Loop through the arrays and create the apps
 for ((i=0; i<$length; i++)); do
-  number=${lesson_numbers[$i]}
-  name=${lesson_names[$i]}
+  number=$(echo ${lesson_numbers[$i]} | tr -d ' ')
+  name=$(to_kebab_case "${lesson_names[$i]}")
   npx create-next-app "./lessons/$number-$name"
 done
+
