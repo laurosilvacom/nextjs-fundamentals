@@ -12,7 +12,7 @@ Run the pnpm init command to create a new package.json file in your project dire
 pnpm init
 ```
 
-Note: You can also use yarn or npm to initialize your project if you prefer.
+> Note: You can also use yarn or npm to initialize your project if you prefer.
 
 Install the necessary dependencies: Once your project is initialized, install the necessary dependencies for a Next.js application.
 
