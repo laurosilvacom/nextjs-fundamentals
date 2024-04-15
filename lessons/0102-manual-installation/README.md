@@ -31,20 +31,19 @@ Next, we will add the following scripts to the package.json file. These scripts 
 },
 ```
 
-- `"dev": "next dev"`: This script starts the application in development mode. It enables features like live reloading and error reporting.
+- `"dev": "next dev"`: This script starts the application in development mode.
 
-- `"build": "next build"`: This script builds the application for production use. It optimizes your application for performance and efficiency.
+- `"build": "next build"`: This script builds the application for production use.
 
-- `"start": "next start"`: This script starts the application in production mode after it has been built. You would typically use this in a production environment.
+- `"start": "next start"`: This script starts the application in production mode after it has been built.
 
-- `"lint": "next lint":` This script runs the linter on your codebase. A linter is a tool that analyzes your code for potential errors and style issues.
+- `"lint": "next lint":` This script runs the linter on your codebase.
 
 We also want to create a folder at the root of our application, `app` and create the following files `layout.tsx` and `page.tsx`.
 
-- `layout.tsx`: This file should contain a root layout component that applies to all routes and must be located at the top level of the app directory. It should contain html and body tags, allowing you to modify the initial HTML returned from the server.
+- `layout.tsx`: This file should contain a root layout component that applies to all routes.
 
 ```tsx
-// layout.tsx
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
@@ -57,7 +56,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 - `page.tsx`: This file should contain a React server component that's been exported.
 
 ```tsx
-// page.tsx
 export default function Page() {
   return <h1>Hola, Next.js!</h1>
 }
