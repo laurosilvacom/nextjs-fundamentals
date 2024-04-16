@@ -13,9 +13,3 @@ Files located at the root level of your project play a crucial role in configuri
 - `next-env.d.ts`: Acts as the TypeScript declaration file for Next.js.
 - `tsconfig.json`: Serves as the configuration file for TypeScript.
 - `jsconfig.json`: Acts as the configuration file for JavaScript.
-
-## Using Top-Level Folders for Organization
-
-Top-level folders, particularly the src directory, can be used to structure your application. Next.js endorses the widespread practice of housing application code within the src directory. This method separates the application code from the project configuration files, which are typically located at the project's root. This separation is favored by certain developers and teams.
-
-To utilize the `src` directory, relocate the app Router folder or pages Router folder to `src/app` or `src/pages` respectively.
