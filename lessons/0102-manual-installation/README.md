@@ -14,7 +14,7 @@ pnpm init
 
 > Note: You can also use yarn or npm to initialize your project if you prefer.
 
-Install the necessary dependencies: Once your project is initialized, install the necessary dependencies for a Next.js application.
+Once your project is initialized, install the necessary dependencies for a Next.js application.
 
 ```bash
 pnpm install next@latest react@latest react-dom@latest
